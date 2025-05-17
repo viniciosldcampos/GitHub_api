@@ -10,20 +10,50 @@ export const WrapperInfoUser = styled.div `
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    height: 100%;
+    height: 13em;
     margin-left: 0.9em;
+    
+    h1 {
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+    
+    h4 {
+        font-size: 1em;
+        font-weight: bold;
+    }
 `;
 
 export const WrapperStatusCount = styled.div `
     display: flex;
     align-items: center;
+    
+    div {
+        margin: 0.4em;
+        text-align: center;
+    }
 `;
 
 export const WrapperUsername = styled.div `
     display: flex;
     align-items: center;
-    h3 {margin-right: 0.4em}
-`;
+    margin-top: 0.5em;
+
+    h3 {
+        margin-right: 0.5em
+    }
+
+    a {
+        font-size: 1.1em;
+        color: blue;
+        font-weight: bold;
+    }
+    `;
 
 export const WrapperImage = styled.img `
     border-radius: 50%;
