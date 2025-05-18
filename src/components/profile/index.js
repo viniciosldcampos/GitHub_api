@@ -1,8 +1,12 @@
 import React from 'react';
 import * as S from './styled'
+import useGithub from '../../hooks/github-hooks';
 
 //Declaração usando arrow function => ao invés de função
 const Profile = () => {
+
+  const { githubState } = useGithub()
+
   return (
     <S.Wrapper>
         <S.WrapperImage
@@ -11,7 +15,7 @@ const Profile = () => {
         />
         <S.WrapperInfoUser>
         <div>
-                <h1>Vinicios</h1>
+                <h1>{githubState.user.name}</h1>
             <S.WrapperUsername>
                 <h3>Username: </h3>
                 <a 
