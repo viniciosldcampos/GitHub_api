@@ -9,15 +9,12 @@ const Profile = () => {
 
   return (
     <S.Wrapper>
-        <S.WrapperImage
-          src={githubState.user.avatar} 
-          alt="Avatar of user"
-        />
+        <S.WrapperImage src={githubState.user.avatar} alt="Avatar of user"/>
         <S.WrapperInfoUser>
         <div>
             <h1>{githubState.user.name}</h1>
             <S.WrapperUserGeneric>
-                <h3>Username: </h3>
+                <h3>Username:</h3>
                 <a 
                 href={githubState.user.html_url} 
                 target="_blank"
@@ -31,11 +28,11 @@ const Profile = () => {
               <span>{githubState.user.company}</span>
             </S.WrapperUserGeneric>
             <S.WrapperUserGeneric>
-              <h3>Location: </h3>
+              <h3>Location:</h3>
               <span>{githubState.user.location}</span>
             </S.WrapperUserGeneric>
             <S.WrapperUserGeneric>
-              <h3>Blog: </h3>
+              <h3>Blog:</h3>
               <a href={githubState.user.blog}
               target='blank' rel='noreferrer'>
                 {githubState.user.blog}
